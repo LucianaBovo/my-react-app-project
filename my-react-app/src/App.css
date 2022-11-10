@@ -1,0 +1,41 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.header {
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.header__description {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 769px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .main {
+    width: 768px;
+    height: 100%;
+    justify-content: unset;
+  }
+}

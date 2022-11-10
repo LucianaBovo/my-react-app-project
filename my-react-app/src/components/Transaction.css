@@ -1,0 +1,21 @@
+.article__transactions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.article__transactions--description {
+  flex: 1;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.to-green h3 {
+  color: #118C4F;
+}
+
+.to-red h3 {
+  color: #bd3d3a;
+}
