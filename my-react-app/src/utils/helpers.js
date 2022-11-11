@@ -1,7 +1,7 @@
 
-export const coinFormatter = (num) => Intl.NumberFormat('nl-NL', {
+export const coinFormatter = (currency, num) => Intl.NumberFormat('nl-NL', {
   style: "currency",
-  currency: "EUR",
+  currency: currency,
 }).format(num);
 
 export const formatDate = (dateInMillisec) => {

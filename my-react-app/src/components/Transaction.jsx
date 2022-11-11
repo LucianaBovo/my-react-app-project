@@ -6,7 +6,7 @@ import { ReactComponent as PlusSign } from '../assets/plus-sign.svg';
 
 import './Transaction.css';
 
-const Transaction = ({ transaction }) => {
+const Transaction = ({ transaction, rate, currency }) => {
   const { amount, description, operator, createdAt } = transaction;
   const formattedDate = formatDate(new Date(createdAt), 'dd/MM/yyyy HH:mm:ss');
 
@@ -17,7 +17,7 @@ const Transaction = ({ transaction }) => {
         : <PlusSign width={24} height={24} title={formattedDate}/>
       }
       <p className="article__transactions--description">{description}</p>
-      <h3>{coinFormatter(amount)}</h3>
+      <h3>{coinFormatter(currency, (amount * rate))}</h3>
     </article>
   )
 }
